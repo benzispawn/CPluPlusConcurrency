@@ -91,7 +91,7 @@ void TrafficLight::cycleThroughPhases()
     std::chrono::duration<double> duration;
 
     while(true) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::this_thread::sleep_for(std::chrono::milliseconds(1));
         duration = std::chrono::high_resolution_clock::now() - begin;
         if (duration.count() > cycle) {
             begin = std::chrono::high_resolution_clock::now();
@@ -107,7 +107,5 @@ void TrafficLight::cycleThroughPhases()
 
             _queue.send(std::move(update));
         }
-
-        return;
     }
 }
