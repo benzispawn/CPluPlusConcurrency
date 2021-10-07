@@ -1,3 +1,7 @@
+# My project on Concurrency on C++
+Here a finished the project on traffic simulation adding 
+a traffic light for the system.
+
 # CPPND: Program a Concurrent Traffic Simulation
 
 <img src="data/traffic_simulation.gif"/>
