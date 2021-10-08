@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/src/TrafficLight.cpp
+iostream
+-
+chrono
+-
+thread
+-
+random
+-
+TrafficLight.h
+/Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/src/TrafficLight.h
+
+/Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/src/TrafficLight.h
+mutex
+-
+deque
+-
+condition_variable
+-
+TrafficObject.h
+/Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/src/TrafficObject.h
+
+/Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/src/TrafficObject.h
+vector
+-
+thread
+-
+mutex
+-
+

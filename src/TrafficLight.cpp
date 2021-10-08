@@ -18,7 +18,8 @@ T MessageQueue<T>::receive()
     _cond.wait(uLock, [this] { return !_messages.empty(); }); // pass unique lock to condition variable
     // remove last vector element from queue
     T msg = std::move(_messages.back());
-    _messages.pop_back();
+//    _messages.pop_back();
+    _messages.clear();
     return msg;
 }
 
