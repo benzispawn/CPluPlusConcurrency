@@ -1,17 +1,52 @@
-"/Users/rbenzi/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/rbenzi/Documents/GitHub/CPluPlusConcurrency
+"/Users/rbenzi/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/rbenzi/Documents/GitHub/CPluPlusConcurrency
+CMake Warning at /Users/rbenzi/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Platform/Darwin-Initialize.cmake:303 (message):
+  Ignoring CMAKE_OSX_SYSROOT value:
+
+   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk
+
+  because the directory does not exist.
+Call Stack (most recent call first):
+  /Users/rbenzi/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake:21 (include)
+  CMakeLists.txt:4 (project)
+
+
 -- The C compiler identification is AppleClang 13.0.0.13000029
 -- The CXX compiler identification is AppleClang 13.0.0.13000029
 -- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found OpenCV: /usr/local (found suitable version "4.5.3", minimum required is "4.1") 
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/cmake-build-debug
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - broken
+CMake Error at /Users/rbenzi/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):/usr/bin/make -f Makefile cmTC_595db/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_595db.dir/build.make CMakeFiles/cmTC_595db.dir/build
+    Building C object CMakeFiles/cmTC_595db.dir/testCCompiler.c.o
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -MD -MT CMakeFiles/cmTC_595db.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_595db.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_595db.dir/testCCompiler.c.o -c /Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+    Linking C executable cmTC_595db
+    "/Users/rbenzi/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_595db.dir/link.txt --verbose=1
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_595db.dir/testCCompiler.c.o -o cmTC_595db 
+    ld: library not found for -lSystem
+    clang: error: linker command failed with exit code 1 (use -v to see invocation)
+    make[1]: *** [cmTC_595db] Error 1
+    make: *** [cmTC_595db/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:4 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/rbenzi/Documents/GitHub/CPluPlusConcurrency/cmake-build-debug/CMakeFiles/CMakeError.log".

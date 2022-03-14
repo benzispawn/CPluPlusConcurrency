@@ -85,7 +85,7 @@ void TrafficLight::cycleThroughPhases()
     std::random_device rd;
     std::mt19937 e{rd()};
 
-    std::uniform_real_distribution<double> dist(4.0, 6.0);
+    std::uniform_real_distribution<double> dist(4000, 6000);
     double cycle = dist(e);
 
     auto begin = std::chrono::high_resolution_clock::now();
